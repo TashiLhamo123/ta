@@ -1,0 +1,108 @@
+
+* {box-sizing: border-box;}
+body {
+ font-family: cursive;
+ font-size: larger;
+ padding: 10px;
+ background: white;
+}
+/* Header/Blog Title */
+.header {
+ padding: 5px;
+ text-align: center;
+ color: rgb(217, 225, 233);
+ background: #004d60;
+}
+/* Style the top navigation bar */
+.topnav {
+ overflow: hidden;
+ background-color: #5995bd;
+}
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ color: #f2f2f2fb;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+ color: #002060;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+ float: left;
+ width: 20%;
+ padding: 5px;
+}
+/* middle column */
+.middlecolumn {
+ float: left;
+ width: 60%;
+ padding: 5px;
+}
+/* Right column */
+.rightcolumn {
+ float: left;
+ width: 20%;
+ background-color: #f1f1f1;
+ padding: 5px;
+}
+/* image */
+.image-container img {
+ text-align: center;
+ width: 100%;
+ padding: 20px;
+ margin: 20px;
+}
+/* Add a card effect for articles */
+.card {
+ background-color: white;
+ padding: 20px;
+ margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+/* Footer */
+.footer {
+ padding: 10px;
+ text-align: center;
+ color: rgb(217, 225, 233);
+ background: #004d60;
+ margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 1000px wide */
+@media screen and (max-width: 1000px) {
+    .leftcolumn{
+    float: left;
+    width:30%;
+    }
+    .middlecolumn{
+    float: left;
+    width: 70%;
+    }
+    .rightcolumn{
+    float: left;
+    width: 100%;
+ padding-right: 5px;
+ }
+ .about, .follow{
+ float: left;
+ width: 50%;
+ padding-left: 5px;
+ }
+}
+/* Responsive layout - when the screen is less than 600px wide */
+@media screen and (max-width: 600px) {
+ .leftcolumn, .middlecolumn, .about, .follow {
+ float: left;
+ width: 100%;
+ }
+}
+
